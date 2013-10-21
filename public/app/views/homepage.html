@@ -1,0 +1,43 @@
+<div class="homepage">
+    <div id="header">
+        <div class="searchContainer">
+            <span class="icon allCategories"></span>
+            <span class="icon search"></span>
+            <input id="searchInput" type="text" placeholder="Search"/>
+            <span class="icon basket"></span>
+            <span class="icon myAccount"></span>
+        </div>
+        <a class="bestSellers" href="#"><span class="icon"></span>Çok Satanlar</a>
+        <a class="dailyDeal" href="#"><span class="icon"></span>Bu 11'e Dikkat</a>
+    </div>
+    <div id="content">
+        <div class="slider">Slider</div>
+        <div class="flatListing bestSellers">
+            <div class="catalogItem" ng-repeat="product in products">
+                <span class="freeShipping">Ücretsiz kargo</span>
+                <a class="imageHolder" href="#">
+                    <img src="" alt=""/>
+                </a>
+                <a class="title" href="#">{{product.title}}</a>
+                <span class="oldPrice">{{product.price}}</span>
+                <span class="price">{{product.displayPrice}}</span>
+            </div>
+        </div>
+        <div class="promotions">
+            <a class="promotion" href="#">
+                <img src="" alt=""/>
+            </a>
+            <a class="promotion" href="#">
+                <img src="" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerLinks">
+            <a class="homepage" href="#">Anasayfa</a>
+            <a class="promotion" href="#">Promosyonlar</a>
+            <a class="hotItems" href="#">Hot Items</a>
+            <a class="myAccount" href="#">Hesabım</a>
+        </div>
+    </div>
+</div>
