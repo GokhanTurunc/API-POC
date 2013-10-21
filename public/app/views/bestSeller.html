@@ -7,8 +7,64 @@
     </thead>
     <tbody>
         <tr ng-repeat="product in products">
-            <td>{{product.title}}</td>
-            <td>{{product.price}}</td>
+            <td id="{{product.id}}" ng-click="alert();">
+                <div class="catalogItem subtitle special   boldest   hasPowerAd" data-hash="{{product.$$hashKey}}">
+                <div class="itemContainer">
+                    <span class="mark">3</span>
+                    <span class="ribbonOutStock" ng-show="{{product.outOfStock}}">tükendiii!!!! </span>
+                    <a class="shipment"> ücretsiz kargo</a>
+                    <div class="power"></div>
+                    <a class="img" href="#">
+                        <span class="imageHolder">
+                            <img src="http://cdn-mf1.n11.com/t/166/87/94/29/48/68/42/78/79/45/64903046330882278779.jpg" alt="WESTERN DIGITAL YENİ MODEL 1TB USB
+3.0TAŞINABİLİRHARİCİHARDDİSKWDBUZG0010BBK-EESN ÜCRETSİZ KARGO" />
+                        </span>
+                    </a>
+                    <div class="priceContainer  withDiscount">
+                        <div class="oldPrice">{{product.price}}</div>
+                        <div class="price">{{product.displayPrice}}</div>
+                    </div>
+
+                    <div class="discountWrapper">
+                        <div class="left">%
+                            <span class="discountRate">15</span>
+                            <span class="label">İNDİRİM</span>
+                        </div>
+                        <div class="right">
+                            <span class="label">KAZANCINIZ</span>
+                            <span class="discountAmount">30,00 TL</span>
+                        </div>
+                    </div>
+                    <a href="http://www.n11.com/western-digital-yeni-model-1tb-usb-30tasinabilirhariciharddiskwdbuzg0010bbk-eesn-ucretsiz-kargo-P13938033" class="shipment"></a>
+                    <div class="storeInfo ">
+                        <span>MAĞAZA</span>
+                        <a href="http://www.n11.com/gelismis-magaza/meyiletisim">
+                            meyiletisim
+                        </a>
+
+                        <div class="storeInfoIcons">
+                            <div class="reliabilityIcon">
+                                <div class="tooltip trustedSellerTooltip">
+                                    <div class="top-arrow"></div>
+                                    Yıldız Mağaza
+                                </div>
+                            </div>
+                            <div class="fastDeliveryIcon">
+                                <div class="tooltip fastDeliveryTooltip">
+                                    <div class="top-arrow"></div>
+                                    Hızlı Gönderim
+                                </div>
+                            </div>
+                            <div class="sellerShopIcon">
+                                <div class="tooltip sellerShopTooltip">
+                                    <div class="top-arrow"></div>Özel Mağaza
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="http://www.n11.com/western-digital-yeni-model-1tb-usb-30tasinabilirhariciharddiskwdbuzg0010bbk-eesn-ucretsiz-kargo-P13938033" class="button medium green productDetail">Ürün Detayı</a>
+                </div>
+            </div></td>
         </tr>
     </tbody>
 </table>

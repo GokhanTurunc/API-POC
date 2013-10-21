@@ -7,11 +7,11 @@ var http = require('http'),
  */
 module.exports.getBestSellingApi = function(fn) {
     http.get({
-        host: '127.0.0.1',
-        path: '/mobileapi/rest/bestSelling',
-        port: '80',
+        host: '172.20.8.21',
+        path: '/mobileapi/rest/bestSelling?categoryGroupCode=elektronik&currentPage=0&itemsPerPage=100',
+        port: '18009',
         headers: {
-            'key': 'value'
+            'Authorization': 'api_key=iphone,api_hash=3509690dec8ec3ec3dc85eb7764fe6e2,api_random=random'
         }
     }, function(httpResponse) {
         var response = '';
@@ -25,3 +25,4 @@ module.exports.getBestSellingApi = function(fn) {
         });
     });
 };
+

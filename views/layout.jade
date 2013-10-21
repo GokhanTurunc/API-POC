@@ -1,18 +1,16 @@
 doctype 5
 html(ng-app='poc', lang='tr')
+
     head
         link(rel='stylesheet', href='third_party/bootstrap/css/bootstrap.min.css')
         meta(name='name', content='width=device-width, initial-scale=1.0')
     body
 
-        div(class='navbar navbar-inverse', ng-controller='HeaderController')
-            div(class='container')
-                div(class='navbar-header')
-                    a(class='navbar-brand')
-                        span(ng-click='goHome()')=projectName
-
-        div.container
-            div(ng-view)
+        div.wrapper(ng-view)
 
         script(src='third_party/angular.min.js')
+        script(src='http://code.jquery.com/jquery-1.7.2.min.js')
         script(src='app/app.js')
+
+
+
