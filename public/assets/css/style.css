@@ -9,7 +9,7 @@
 .bestSellers .icon {background-position: -62px -37px;width: 56px;height: 65px;top: 24px;margin-right: 5px;position: relative;}
 .dailyDeal .icon {background-position: 0 -44px;width: 55px;height: 64px;top: 24px;margin-right: 5px;position: relative;}
 .icon {background: url(../images/sprite.png) no-repeat; display: inline-block}
-.icon.allCategories {width: 36px;height: 17px;}
+.icon.allCategories {width: 36px;height: 17px; position: relative; top: 3px; }
 .icon.search {width: 25px;height: 26px;background-position: 0 -17px;position: absolute;top: 30px;left: 80px;}
-.icon.basket {width: 43px;height: 36px;background-position: -37px 0;top: 5px;position: relative;}
-.icon.myAccount {width: 37px;height: 36px;background-position: -81px 0;top: 5px;position: relative;}
+.icon.basket {width: 43px;height: 36px;background-position: -37px 0;top: 10px;position: relative;}
+.icon.myAccount {width: 37px;height: 36px;background-position: -81px 0;top: 10px;position: relative;}

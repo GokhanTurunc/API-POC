@@ -66,7 +66,7 @@ function HomeController($scope, $http) {
     });
 
     $http.get('/get-best-selling').success(function(data) {
-        
+
     });
 
 };
