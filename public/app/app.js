@@ -65,6 +65,10 @@ function HomeController($scope, $http) {
         $scope.promotionsSlider = data;
     });
 
+    $http.get('/get-best-selling').success(function(data) {
+        
+    });
+
 };
 
 

@@ -4,7 +4,7 @@ var http = require('http');
  * @param {Function} fn
  */
 module.exports.getBestSelling = function(fn) {
-    getApi('bestSelling?categoryGroupCode=elektronik&currentPage=0&itemsPerPage=100', null, fn);
+    getApi('bestSelling', 'itemsPerPage=10', fn);
 };
 
 

@@ -27,11 +27,11 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 
 // Get best selling products
-//app.get('/api/get-best-selling', function(req, res) {
-//    api.getBestSelling(function(data) {
-//        res.send(data);
-//    });
-//});
+app.get('/get-best-selling', function(req, res) {
+    api.getBestSelling(function(data) {
+        res.send(data);
+    });
+});
 
 app.get('/get-forgery-token', function(req, res) {
     api.getForgeryToken(function(data) {
