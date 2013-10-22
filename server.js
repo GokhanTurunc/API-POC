@@ -27,29 +27,35 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 
 // Get best selling products
-app.get('/api/get-best-selling', function(req, res) {
-    api.getBestSelling(function(data) {
-        res.send(data);
-    });
-});
+//app.get('/api/get-best-selling', function(req, res) {
+//    api.getBestSelling(function(data) {
+//        res.send(data);
+//    });
+//});
 
-app.get('/api/get-forgery-token', function(req, res) {
+app.get('/get-forgery-token', function(req, res) {
     api.getForgeryToken(function(data) {
         res.send(data);
     });
 });
 
-app.get('/api/get-buyer-info', function(req, res) {
-    api.getBuyerInfo(function(data) {
-        res.send(data);
+app.get('/get-homepage-promotions', function(req, res) {
+    api.getHomePagePromotions(function(data) {
+          res.send(data);
     });
 });
 
-app.post('/api/login', function(req, res) {
-    api.buyerLogin(function(data) {
-        res.send(data);
-    })
-});
+//app.get('/api/get-buyer-info', function(req, res) {
+//    api.getBuyerInfo(function(data) {
+//        res.send(data);
+//    });
+//});
+//
+//app.post('/api/login', function(req, res) {
+//    api.buyerLogin(function(data) {
+//        res.send(data);
+//    })
+//});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

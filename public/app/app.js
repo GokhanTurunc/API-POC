@@ -9,23 +9,17 @@ poc.config(function($routeProvider) {
             controller: 'HomeController'
         });
 
-//    $routeProvider
-//        .when('/cok-satanlar', {
-//            templateUrl: 'app/views/bestSeller.html',
-//            controller: 'BestSellingController'
-//        });
-
     $routeProvider
         .when('/cok-satanlar', {
             templateUrl: 'app/views/bestSellerLayout.html',
             controller: 'BestSellingController'
         });
 
-    $routeProvider
-        .when('/uye/giris', {
-            templateUrl: 'app/views/login.html',
-            controller: 'LoginController'
-        });
+//    $routeProvider
+//        .when('/uye/giris', {
+//            templateUrl: 'app/views/login.html',
+//            controller: 'LoginController'
+//        });
 
     // Get device id
     window.deviceId = document.getElementById('deviceId').value;
@@ -36,16 +30,16 @@ poc.config(function($routeProvider) {
 
 
 // Product image directive
-poc.directive('productimage', function() {
-    return {
-        restrict: 'A',
-        link: function($directive, img) {
-            if (Array.isArray($directive.product.images) && $directive.product.images.length) {
-                img[0].src = $directive.product.images[0].path.replace('/{0}/', '/166/');
-            }
-        }
-    }
-});
+//poc.directive('productimage', function() {
+//    return {
+//        restrict: 'A',
+//        link: function($directive, img) {
+//            if (Array.isArray($directive.product.images) && $directive.product.images.length) {
+//                img[0].src = $directive.product.images[0].path.replace('/{0}/', '/166/');
+//            }
+//        }
+//    }
+//});
 
 
 // BestSellingController
@@ -61,11 +55,37 @@ function BestSellingController($scope, $http, $location) {
 
 // HomeController
 function HomeController($scope, $http) {
-    $scope.products = [];
+//    $scope.products = [];
+//
+//    $http.get('/api/').success(function(response, statusCode, headers, config) {
+//       $scope.products = response.products;
+//    });
 
-    $http.get('/api/').success(function(response, statusCode, headers, config) {
-       $scope.products = response.products;
-
+    $http.get('/get-homepage-promotions').success(function(data) {
+        $scope.promotionsSlider = data;
     });
+
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

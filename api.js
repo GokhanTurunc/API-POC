@@ -37,3 +37,13 @@ module.exports.buyerLogin = function(fn, params) {
         fn(data);
     });
 };
+
+
+/**
+ * @param {Function} fn
+ */
+module.exports.getHomePagePromotions = function(fn) {
+    getApi('homePage', null, function(data) {
+        fn(data);
+    });
+};
