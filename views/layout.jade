@@ -3,14 +3,18 @@ html(ng-app='poc', lang='tr')
 
     head
         link(rel='stylesheet', href='third_party/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='assets/css/style.css')
         meta(name='name', content='width=device-width, initial-scale=1.0')
+        script.
+            function onProductImageError(img) {
+                img.src = 'http://www.n11.com/static/images/layout/no-image.jpg';
+            }
     body
 
         div.wrapper(ng-view)
 
         script(src='third_party/angular.min.js')
-        script(src='http://code.jquery.com/jquery-1.7.2.min.js')
         script(src='app/app.js')
 
-
-
+        input(type='hidden', id='deviceId', value='#{deviceId}')
+        input(type='hidden', id='forgeryToken', value='#{forgeryToken}')

@@ -1,0 +1,5 @@
+ul.thumbnails > li { width: 380px; float: left; list-style: none; margin: 10px; }
+ul.thumbnails > li > .thumbnail { height: 300px; }
+ul.thumbnails > li img { max-width: 150px; height: 150px; }
+
+#loginContainer { width: 500px; }

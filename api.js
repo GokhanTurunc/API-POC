@@ -1,28 +1,39 @@
-var http = require('http'),
-    fs = require('fs');
+var http = require('http');
 
 /**
- *
- * @constructor
+ * @param {Function} fn
  */
-module.exports.getBestSellingApi = function(fn) {
-    http.get({
-        host: '172.20.8.21',
-        path: '/mobileapi/rest/bestSelling?categoryGroupCode=elektronik&currentPage=0&itemsPerPage=100',
-        port: '18009',
-        headers: {
-            'Authorization': 'api_key=iphone,api_hash=3509690dec8ec3ec3dc85eb7764fe6e2,api_random=random'
-        }
-    }, function(httpResponse) {
-        var response = '';
+module.exports.getBestSelling = function(fn) {
+    getApi('bestSelling?categoryGroupCode=elektronik&currentPage=0&itemsPerPage=100', null, fn);
+};
 
-        httpResponse.on('data', function(chunk) {
-            response += chunk;
-        });
 
-        httpResponse.on('end', function() {
-            fn(response);
-        });
+/**
+ * @param {Function} fn
+ */
+module.exports.getForgeryToken = function(fn) {
+    getApi('tokenGenerate', 'deviceId=13t8t2ge652az1t7h52', function(data) {
+        fn(data);
     });
 };
 
+
+/**
+ * @param {Function} fn
+ */
+module.exports.getBuyerInfo = function(fn) {
+    getApi('getBuyerInfo', null, function(data) {
+        fn(data);
+    });
+};
+
+
+/**
+ * @param {Function} fn
+ * @param {Object|string} params
+ */
+module.exports.buyerLogin = function(fn, params) {
+    postApi('buyerLogin', params, function(data) {
+        fn(data);
+    });
+};

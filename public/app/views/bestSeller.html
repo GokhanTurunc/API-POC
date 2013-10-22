@@ -7,8 +7,8 @@
     </thead>
     <tbody>
         <tr ng-repeat="product in products">
-            <td id="{{product.id}}" ng-click="alert();">
-                <div class="catalogItem subtitle special   boldest   hasPowerAd" data-hash="{{product.$$hashKey}}">
+            <td id="{{product.id}}">
+                <div class="catalogItem subtitle special boldest hasPowerAd" data-hash="{{product.$$hashKey}}">
                 <div class="itemContainer">
                     <span class="mark">3</span>
                     <span class="ribbonOutStock" ng-show="{{product.outOfStock}}">tükendiii!!!! </span>
@@ -16,8 +16,7 @@
                     <div class="power"></div>
                     <a class="img" href="#">
                         <span class="imageHolder">
-                            <img src="http://cdn-mf1.n11.com/t/166/87/94/29/48/68/42/78/79/45/64903046330882278779.jpg" alt="WESTERN DIGITAL YENİ MODEL 1TB USB
-3.0TAŞINABİLİRHARİCİHARDDİSKWDBUZG0010BBK-EESN ÜCRETSİZ KARGO" />
+                            <img src="" productimage alt="{{product.title}}" />
                         </span>
                     </a>
                     <div class="priceContainer  withDiscount">

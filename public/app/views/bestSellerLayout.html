@@ -1,0 +1,23 @@
+<div class="container">
+    <ul class="thumbnails">
+
+        <li class="span5" ng-repeat="product in products">
+            <div class="thumbnail">
+                <img src="" productimage alt="" onerror="onProductImageError(this);" />
+                <div class="caption">
+                    <h5>
+                        {{product.title}}
+                    </h5>
+                    <p>
+                        {{product.subTitle}}
+                    </p>
+                    <p>
+                        <a ng-click="buyProduct();" class="btn btn-success">Buy</a>
+                        <a class="btn btn-warning">Try</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>

@@ -7,20 +7,34 @@
             <span class="icon basket"></span>
             <span class="icon myAccount"></span>
         </div>
-        <a class="bestSellers" href="#"><span class="icon"></span>Çok Satanlar</a>
-        <a class="dailyDeal" href="#"><span class="icon"></span>Bu 11'e Dikkat</a>
+        <a class="bestSellers" href="/#/cok-satanlar">
+            <span class="icon"></span>
+            Çok Satanlar
+        </a>
+        <a class="dailyDeal" href="#">
+            <span class="icon"></span>
+            Bu 11'e Dikkat
+        </a>
     </div>
     <div id="content">
         <div class="slider">Slider</div>
         <div class="flatListing bestSellers">
             <div class="catalogItem" ng-repeat="product in products">
-                <span class="freeShipping">Ücretsiz kargo</span>
+                <span class="freeShipping">
+                    Ücretsiz kargo
+                </span>
                 <a class="imageHolder" href="#">
                     <img src="" alt=""/>
                 </a>
-                <a class="title" href="#">{{product.title}}</a>
-                <span class="oldPrice">{{product.price}}</span>
-                <span class="price">{{product.displayPrice}}</span>
+                <a class="title" href="#">
+                    {{product.title}}
+                </a>
+                <span class="oldPrice">
+                    {{product.price}}
+                </span>
+                <span class="price">
+                    {{product.displayPrice}}
+                </span>
             </div>
         </div>
         <div class="promotions">
