@@ -4,7 +4,7 @@ var poc = angular.module('poc', []);
 // Application configs
 poc.config(function($routeProvider) {
     $routeProvider
-        .when('/anasayfa', {
+        .when('/', {
             templateUrl: 'app/views/home.html',
             controller: 'HomeController'
         });
@@ -56,14 +56,6 @@ function BestSellingController($scope, $http, $location) {
        $scope.products = response.products;
     });
 
-    $scope.buyProduct = function() {
-        $http.get('/api/get-buyer-info').success(function(response) {
-            if (response && response['errorMessage'] && response['errorMessage']['errorType'] == 'LOGIN_REQUIRED') {
-                $location.path('/uye/giris');
-            }
-        });
-    };
-
 };
 
 
@@ -71,32 +63,9 @@ function BestSellingController($scope, $http, $location) {
 function HomeController($scope, $http) {
     $scope.products = [];
 
-    $http.get('/api/get-best-selling').success(function(response, statusCode, headers, config) {
+    $http.get('/api/').success(function(response, statusCode, headers, config) {
        $scope.products = response.products;
 
     });
 };
-
-
-// LoginController
-function LoginController($scope, $http) {
-    var email = document.getElementById('email');
-    var pass = document.getElementById('pass');
-
-    $scope.doLogin = function() {
-        if (email.value && pass.value) {
-            $http.post('/uye/giris');
-        }
-    };
-};
-
-
-
-
-
-
-
-
-
-
 
