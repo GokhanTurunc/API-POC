@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/temporary/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/temporary/product_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/temporary/promotion_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/temporary/promotion_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/sprite.png" afterPath="$PROJECT_DIR$/public/assets/images/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.js" afterPath="$PROJECT_DIR$/public/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/home.html" afterPath="$PROJECT_DIR$/public/app/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="API-POC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +13,7 @@
     <file path="/app.js" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382431082900" ignored="false" />
     <file path="/bestSeller.html" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382340609125" ignored="false" />
     <file path="/bestSellerLayout.html" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382359504258" ignored="false" />
-    <file path="/style.css" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382430696537" ignored="false" />
+    <file path="/style.css" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382451696975" ignored="false" />
     <file path="/layout.jade" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382428845476" ignored="false" />
     <file path="/server.js" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382431252826" ignored="false" />
     <file path="/util.js" changelist="4c2b0d60-9b4e-4940-bebe-99bef8e773f7" time="1382431373679" ignored="false" />
@@ -67,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="7" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.58804524">
+            <state line="57" column="0" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0">
+            <state line="47" column="33" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.85148513">
               <folding />
             </state>
           </provider>
@@ -158,8 +148,8 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/util.js" />
         <option value="$PROJECT_DIR$/api.js" />
-        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/public/app/app.js" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -565,16 +555,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/public/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0">
+        <state line="57" column="0" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/app.js">
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="7" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.58804524">
+        <state line="47" column="33" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.85148513">
           <folding />
         </state>
       </provider>

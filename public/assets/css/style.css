@@ -45,3 +45,4 @@
 .catalogItem .oldPrice {color: #747474;text-decoration: line-through;font-size: 12px;display: block}
 .catalogItem .price {font-size: 20px;color:#DA242A;display: block}
 
+.promotion {float: left;border: 5px solid #292929;}
