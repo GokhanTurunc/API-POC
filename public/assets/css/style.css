@@ -1,4 +1,4 @@
-
+.swipe a {margin: 0 0 0 0;}
 #header {background: #E7272C;border-bottom:4px solid #981B22;}
 #header > table {width: 100%;border-bottom: 1px solid #981B22;}
 #header > table td {width: 70px;height: 58px;padding: 14px 0;text-align: center;}
@@ -7,9 +7,41 @@
 #header > a {color: #FFF;width: 49%;display: inline-block;height: 114px;line-height: 114px;font-size: 24px;text-align: center}
 #header .bestSellers {border-right: 1px solid #981B22;margin-left: -4px;}
 .bestSellers .icon {background-position: -62px -37px;width: 56px;height: 65px;top: 24px;margin-right: 5px;position: relative;}
+#header .bestSellers {padding: 0 !important;overflow: inherit}
 .dailyDeal .icon {background-position: 0 -44px;width: 55px;height: 64px;top: 24px;margin-right: 5px;position: relative;}
 .icon {background: url(../images/sprite.png) no-repeat; display: inline-block}
+
 .icon.allCategories {width: 36px;height: 17px; position: relative; top: 3px; }
 .icon.search {width: 25px;height: 26px;background-position: 0 -17px;position: absolute;top: 30px;left: 80px;}
 .icon.basket {width: 43px;height: 36px;background-position: -37px 0;top: 10px;position: relative;}
 .icon.myAccount {width: 37px;height: 36px;background-position: -81px 0;top: 10px;position: relative;}
+
+/*.icon.allCategories {width: 36px;height: 17px;}*/
+/*.icon.search {width: 25px;height: 26px;background-position: 0 -17px;position: absolute;top: 30px;left: 15px;}*/
+/*.icon.basket {width: 43px;height: 36px;background-position: -37px 0;top: 5px;position: relative;}*/
+/*.icon.myAccount {width: 37px;height: 36px;background-position: -81px 0;top: 5px;position: relative;}*/
+
+.swipe {max-height: 500px;overflow: hidden;visibility: hidden;position: relative;width: 100%;}
+.swipe-wrap {overflow: hidden;position: relative;}
+.swipe-wrap > a {float:left;position: relative;}
+.swipe-wrap > a div.name.sliderLink {height: 100px;background: rgba(0, 0, 0, 0.6);width: 100%;position: absolute;bottom: 0;left: 0;color: #fff;}
+.swipe-wrap > a div.name.sliderLink h3 {font-size: 28px;margin:25px 0 15px 40px;}
+.swipe-wrap > a div.name.sliderLink p {font-size: 22px;margin-left: 40px;}
+.swipe nav {text-align: center;margin-top: 15px;}
+.swipe .position li {display: inline-block;width: 16px;height: 16px;margin-right:15px;cursor: pointer;background: url(../images/sprite.png) -102px -103px no-repeat;}
+.swipe .position li.on {background-position: -84px -103px;}
+#content, .swipe img {width: 100%;}
+.swipe img {height: 330px;max-height: 330px;max-width: 100%;}
+
+.flatListing.bestSellers {padding: 30px 0 30px;overflow: hidden;background: #F2F2F2;margin-top: 15px;}
+.bestSellers .catalogItem {width: 186px !important;height: 290px;float: left;padding: 10px;background: #F2F2F2;}
+.bestSellers .catalogItem img{width: 166px;height: 166px;}
+.bestSellers .header {overflow: hidden;}
+.bestSellers .header h2{float: left;}
+.bestSellers .header .showAll{float: right;}
+.bestSellers .productContainer {width: 100%;overflow-y: hidden;overflow-x: scroll;}
+.bestSellers .productContainer .products{width: 1860px;}
+.catalogItem .title {color: #157EFB;font-size: 14px;display: block;}
+.catalogItem .oldPrice {color: #747474;text-decoration: line-through;font-size: 12px;display: block}
+.catalogItem .price {font-size: 20px;color:#DA242A;display: block}
+

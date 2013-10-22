@@ -1,0 +1,29 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, img, strong, sub, sup, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+canvas, embed{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    position: relative;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-spacing: 0;
+}
+a, a:hover, a:active {
+    outline:0;
+    cursor: pointer;
+}
+input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+input:focus {
+    outline: none;
+}

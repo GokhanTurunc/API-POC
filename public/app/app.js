@@ -29,17 +29,20 @@ poc.config(function($routeProvider) {
 });
 
 
-// Product image directive
-//poc.directive('productimage', function() {
-//    return {
-//        restrict: 'A',
-//        link: function($directive, img) {
-//            if (Array.isArray($directive.product.images) && $directive.product.images.length) {
-//                img[0].src = $directive.product.images[0].path.replace('/{0}/', '/166/');
-//            }
-//        }
-//    }
-//});
+//Product image directive
+poc.directive('productimage', function() {
+    return {
+        restrict: 'A',
+        link: function($directive, img) {
+
+            if ($directive.banner.banner) {
+                var mapping = $(img[0]).data("src-map");
+                var src = $directive['item'].mapping.replace('{0}', 'org');
+                $(img[0]).attr("src", src);
+            }
+        }
+    }
+});
 
 
 // BestSellingController
@@ -50,27 +53,41 @@ function BestSellingController($scope, $http, $location) {
        $scope.products = response.products;
     });
 
-};
+}
 
 
 // HomeController
 function HomeController($scope, $http) {
-//    $scope.products = [];
-//
-//    $http.get('/api/').success(function(response, statusCode, headers, config) {
-//       $scope.products = response.products;
-//    });
-
     $http.get('/get-homepage-promotions').success(function(data) {
-        $scope.promotionsSlider = data;
+        $scope.promotionsSlider = data['homePagePromotions'];
+        setTimeout(function(){$scope.initBannerCarousel();},1)
     });
 
-    $http.get('/get-best-selling').success(function(data) {
+    $http.get('/get-best-selling').success(function(response) {
+       $scope.bestSellers = response.products;
 
     });
 
-};
+    $scope.initBannerCarousel = function(){
+        var bullets = $('.banners .position').find('li');
+        new Swipe($('.banners.swipe')[0], {
+            speed: 400,
+            auto: 3000,
+            continuous: true,
+            disableScroll: false,
+            stopPropagation: false,
+            callback: function(index, elem) {
+                var i = bullets.length;
+                while (i--) {
+                    bullets[i].className = ' ';
+                }
+                bullets[index].className = 'on';
+            },
+            transitionEnd: function(index, elem) {}
+        });
+    };
 
+}
 
 
 

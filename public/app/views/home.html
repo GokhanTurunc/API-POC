@@ -22,44 +22,45 @@
     </div>
     <div id="content">
 
-        <div id="promotionsSlider">
-            Slider
+        <div class='swipe banners'>
+            <div class='swipe-wrap'>
+                <a href="#" ng-repeat="item in promotionsSlider">
+                    <img src="../../assets/images/temporary/banner.png" alt="" />
+                    <!--<img productimage src="" data-src-map="banner" alt="" />-->
+                </a>
+            </div>
+            <nav>
+                <ul class="position">
+                    <li ng-repeat="item in promotionsSlider"  ng-class="{true:'on', false:''}[$index==0]"></li>
+                </ul>
+            </nav>
         </div>
 
         <div class="flatListing bestSellers">
-            <div class="catalogItem" ng-repeat="product in products">
-                <span class="freeShipping">
-                    Ücretsiz kargo
-                </span>
-                <a class="imageHolder" href="#">
-                    <img src="" alt=""/>
-                </a>
-                <a class="title" href="#">
-                    {{product.title}}
-                </a>
-                <span class="oldPrice">
-                    {{product.price}}
-                </span>
-                <span class="price">
-                    {{product.displayPrice}}
-                </span>
+            <div class="header">
+                <h2>ÇOK SATANLAR</h2>
+                <a class="showAll" href="#">Tümünü Gör</a>
+            </div>
+            <div class="productContainer">
+                <div class="products">
+                    <div class="catalogItem" ng-repeat="item in bestSellers">
+                        <a class="imageHolder" href="#">
+                            <img src="../../assets/images/temporary/product_1.png" alt=""/>
+                        </a>
+                        <a class="title" href="#">{{item.title}}</a>
+                        <span class="oldPrice">{{item.price}}</span>
+                        <span class="price">{{item.displayPrice}}</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="promotions">
             <a class="promotion" href="#">
-                <img src="" alt=""/>
+                <img src="../../assets/images/temporary/promotion_1.png" alt=""/>
             </a>
             <a class="promotion" href="#">
-                <img src="" alt=""/>
+                <img src="../../assets/images/temporary/promotion_2.png" alt=""/>
             </a>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="footerLinks">
-            <a class="homepage" href="#">Anasayfa</a>
-            <a class="promotion" href="#">Promosyonlar</a>
-            <a class="hotItems" href="#">Hot Items</a>
-            <a class="myAccount" href="#">Hesabım</a>
         </div>
     </div>
 </div>

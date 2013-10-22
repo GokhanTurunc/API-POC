@@ -3,13 +3,14 @@ html(ng-app='poc', lang='tr')
 
     head
         link(rel='stylesheet', href='third_party/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='assets/css/reset.css')
         link(rel='stylesheet', href='assets/css/style.css')
         script.
             function onProductImageError(img) {
                 img.src = 'http://www.n11.com/static/images/layout/no-image.jpg';
             }
-        link(rel='stylesheet', href='third_party/Swipe/style.css')
-        meta(name='viewport', content='width=640, initial-scale=1.0,user-scalable=no')
+        //link(rel='stylesheet', href='third_party/Swipe/style.css')
+        meta(name='viewport', content='width=640, initial-scale=1.0')
         meta(name='charset', content='UTF-8')
 
     body
